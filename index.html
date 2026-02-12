@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>🌸 For Subhasree ❤️ Logeswaran 🌸</title>
+    <!-- Pixel Font & Elegant Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+    <style>
+        /* ===== PIXEL CUTE CORE ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            image-rendering: pixelated;
+            image-rendering: crisp-edges;
+        }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background: #ffb6c1;
+        }
+
+        body {
+            font-family: 'Pixelify Sans', sans-serif;
+            background: linear-gradient(145deg, #ffd0d7, #ffe0e5, #fff0f5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        /* ===== PIXEL HEARTS BACKGROUND ===== */
+        .pixel-hearts {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .pixel-heart {
+            position: absolute;
+            font-size: 20px;
+            opacity: 0.5;
+            color: #ff8da1;
+            animation: pixelFloat 12s linear infinite;
+            image-rendering: pixelated;
+        }
+
+        @keyframes pixelFloat {
+            0% { transform: translateY(100vh) scale(1); opacity: 0.6; }
+            100% { transform: translateY(-10vh) scale(0.8); opacity: 0.2; }
+        }
+
+        /* ===== SCREEN SYSTEM ===== */
+        .screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 100;
+            transition: opacity 0.3s steps(5);
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .screen.hidden {
+            opacity: 0 !important;
+            visibility: hidden !important;
+            pointer-events: none !important;
+        }
+
+        /* ===== PIXEL PANEL ===== */
+        .pixel-panel {
+            background: #fff5f7;
+            padding: 35px 30px;
+            border: 6px solid #ff4d6d;
+            border-radius: 0px;
+            box-shadow: 10px 10px 0 #b3002d, 15px 15px 0 rgba(255, 77, 109, 0.3);
+            text-align: center;
+            max-width: 520px;
+            width: 90%;
+            position: relative;
+            z-index: 200;
+            image-rendering: pixelated;
+        }
+
+        .pixel-panel::before {
+            content: "🌸";
+            position: absolute;
+            top: -15px;
+            left: -15px;
+            font-size: 30px;
+            color: #ff4d6d;
+            filter: drop-shadow(3px 3px 0 #b3002d);
+        }
+
+        .pixel-panel::after {
+            content: "🌸";
+            position: absolute;
+            bottom: -15px;
+            right: -15px;
+            font-size: 30px;
+            color: #ff4d6d;
+            filter: drop-shadow(3px 3px 0 #b3002d);
+        }
+
+        .pixel-panel h2 {
+            font-family: 'Pixelify Sans', sans-serif;
+            color: #d90429;
+            font-size: 32px;
+            margin-bottom: 15px;
+            letter-spacing: 2px;
+            text-shadow: 4px 4px 0 #ffd6dc;
+            font-weight: 700;
+        }
+
+        .pixel-panel p {
+            font-family: 'Pixelify Sans', sans-serif;
+            color: #2f1b25;
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        /* ===== BUTTON CONTAINER - PERFECT BOUNDARIES ===== */
+        .button-container {
+            position: relative;
+            width: 100%;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            margin: 20px 0 10px;
+        }
+
+        /* ===== CUTE PIXEL BUTTONS ===== */
+        .cute-btn {
+            font-family: 'Pixelify Sans', sans-serif;
+            padding: 14px 32px;
+            border: 4px solid white;
+            border-radius: 0px;
+            cursor: pointer;
+            font-size: 22px;
+            font-weight: 700;
+            transition: all 0.1s steps(3);
+            letter-spacing: 2px;
+            box-shadow: 5px 5px 0 #7f1e2e;
+            position: relative;
+            z-index: 300;
+            min-width: 120px;
+            image-rendering: pixelated;
+        }
+
+        .yes-btn {
+            background: #ff4d6d;
+            color: white;
+            border-color: #fff0f0;
+            box-shadow: 6px 6px 0 #a4133c;
+        }
+
+        .no-btn {
+            background: #ffd6dc;
+            color: #3a1e1e;
+            border-color: #ffb3c1;
+            box-shadow: 6px 6px 0 #ff8fa3;
+        }
+
+        .cute-btn:hover {
+            transform: translateY(-4px);
+            box-shadow: 8px 8px 0 #7f1e2e;
+        }
+
+        /* ===== 🐢 NORMAL SPEED NO BUTTON ===== */
+        #noBtn {
+            transition: left 0.12s ease, top 0.12s ease !important;
+            will-change: left, top;
+        }
+
+        /* ===== PIXEL MESSAGE ===== */
+        .pixel-message {
+            font-family: 'Pixelify Sans', sans-serif;
+            color: #b34167;
+            font-size: 18px;
+            margin-top: 20px;
+            padding: 12px;
+            background: #ffe8ed;
+            border: 4px dashed #ff4d6d;
+            border-radius: 0px;
+            min-height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            image-rendering: pixelated;
+        }
+
+        /* ===== PIXEL INPUT - HIDDEN PLACEHOLDER ===== */
+        .pixel-input {
+            font-family: 'Pixelify Sans', sans-serif;
+            padding: 16px;
+            width: 90%;
+            border: 5px solid #ffb3c6;
+            border-radius: 0px;
+            font-size: 20px;
+            text-align: center;
+            background: white;
+            box-shadow: inset 3px 3px 0 #ffe3e3, 6px 6px 0 #ff4d6d;
+            margin: 20px auto;
+            outline: none;
+            color: #590d22;
+            font-weight: 600;
+            display: block;
+            image-rendering: pixelated;
+        }
+
+        .pixel-input::placeholder {
+            color: #ffb3c6;
+            opacity: 0.8;
+        }
+
+        /* ===== HINT TRIGGER - CUTE & INTERACTIVE ===== */
+        .hint-area {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 5px;
+        }
+
+        .hint-trigger {
+            font-family: 'Pixelify Sans', sans-serif;
+            background: #ffd6dc;
+            padding: 8px 16px;
+            border: 3px solid #ff4d6d;
+            box-shadow: 4px 4px 0 #b3002d;
+            color: #590d22;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.05s steps(3);
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            image-rendering: pixelated;
+        }
+
+        .hint-trigger:hover {
+            transform: translateY(-2px);
+            box-shadow: 6px 6px 0 #b3002d;
+        }
+
+        .hint-trigger:active {
+            transform: translateY(2px);
+            box-shadow: 2px 2px 0 #b3002d;
+        }
+
+        /* ===== PROPOSAL PAGE - ELEGANT ===== */
+        .letter-panel {
+            max-width: 700px;
+            max-height: 80vh;
+            overflow-y: auto;
+            padding: 40px 35px;
+            background: #fff8fa;
+            border-color: #ff6b7c;
+        }
+
+        .letter-panel h2 {
+            font-family: 'Great Vibes', cursive !important;
+            font-size: 48px !important;
+            color: #b8003a !important;
+            text-shadow: 2px 2px 0 #ffd6dc !important;
+        }
+
+        .proposal-text {
+            text-align: left;
+            font-family: 'Playfair Display', serif !important;
+        }
+
+        .proposal-text p {
+            font-family: 'Playfair Display', serif !important;
+            font-size: 17px !important;
+            line-height: 1.8 !important;
+            color: #2a1a22 !important;
+            margin-bottom: 20px !important;
+        }
+
+        .final-question {
+            font-family: 'Great Vibes', cursive !important;
+            font-size: 32px !important;
+            color: #a4133c !important;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        /* ===== FINAL SCREEN ===== */
+        .final-panel {
+            background: #fff0f2;
+        }
+
+        .call-btn {
+            background: #ff3b5c;
+            font-size: 24px;
+            padding: 18px 40px;
+            box-shadow: 8px 8px 0 #87001e;
+        }
+
+        /* ===== CINEMATIC BOKEH EXPLOSION CANVAS ===== */
+        #cinematicCanvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            pointer-events: none;
+            z-index: 9999;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.1s;
+        }
+
+        #cinematicCanvas.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* ===== SHAKE ANIMATION ===== */
+        .shake {
+            animation: pixelShake 0.3s steps(3);
+        }
+
+        @keyframes pixelShake {
+            0%, 100% { transform: translateX(0); }
+            33% { transform: translateX(-6px); }
+            66% { transform: translateX(6px); }
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 500px) {
+            .pixel-panel { padding: 25px 20px; }
+            .cute-btn { padding: 12px 24px; font-size: 20px; min-width: 100px; }
+            .button-container { gap: 15px; }
+            .letter-panel h2 { font-size: 36px !important; }
+            .hint-trigger { padding: 6px 12px; font-size: 14px; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Pixel Hearts Background -->
+    <div class="pixel-hearts" id="heartContainer"></div>
+
+    <!-- 🎬 CINEMATIC BOKEH EXPLOSION CANVAS (VIDEO-LIKE) -->
+    <canvas id="cinematicCanvas"></canvas>
+
+    <!-- SCREEN 1: LANDING -->
+    <div id="landing-screen" class="screen">
+        <div class="pixel-panel">
+            <h2>Hey Subhasree ❤️</h2>
+            <p>Still loving me today…<br>or should I impress you again? 😄</p>
+            
+            <div class="button-container" id="btnContainer">
+                <button class="cute-btn yes-btn" id="yesBtn">YES</button>
+                <button class="cute-btn no-btn" id="noBtn">NO</button>
+            </div>
+            
+            <div id="noMessage" class="pixel-message"></div>
+        </div>
+    </div>
+
+    <!-- SCREEN 2: MEMORY TEST - HIDDEN DATE, CUTE HINT -->
+    <div id="memory-screen" class="screen hidden">
+        <div class="pixel-panel">
+            <h2>Little Memory Test 💌</h2>
+            <p>Enter our special date</p>
+            <input type="text" id="dateInput" class="pixel-input" placeholder="DD/MM/YYYY" maxlength="10" autocomplete="off">
+            
+            <!-- 📌 CUTE HINT TRIGGER - "Do you want any lecture?" -->
+            <div class="hint-area">
+                <span class="hint-trigger" id="hintTrigger">
+                    <span>❓</span> Hint
+                </span>
+            </div>
+            
+            <button class="cute-btn yes-btn" id="unlockBtn" style="margin-top: 20px;">Unlock ❤️</button>
+            <div id="memoryHint" class="pixel-message" style="margin-top: 20px;"></div>
+        </div>
+    </div>
+
+    <!-- SCREEN 3: PROPOSAL LETTER -->
+    <div id="proposal-screen" class="screen hidden">
+        <div class="pixel-panel letter-panel">
+            <h2>My Heart to You ❤️</h2>
+            <div class="proposal-text">
+                <p>Some people enter life loudly… but some arrive softly and still change everything. ✨</p>
+                <p>That's how you came into my world, Subhasree — quietly, naturally, yet unforgettable from the very first moment.</p>
+                <p>At first, you were just someone I noticed in the middle of many faces. But slowly, without any dramatic turning point, our conversations began to grow. Small talks turned into daily smiles, simple sharing became comfort, and before I realized it, you weren't just part of my days — you became the best part of them. 💖</p>
+                <p>They say, "Love doesn't start when two people meet… it starts when two hearts begin understanding each other." And that's exactly what happened with us.</p>
+                <p>Of course, we've had our little storms. Tiny fights, stubborn moments, misunderstandings. But every time, love quietly won again. Because what we have isn't fragile — it's strong, patient, and real. 🌸</p>
+                <p>"True love isn't about perfection… it's about choosing each other even on imperfect days."</p>
+                <p>Today, when I think about everything — the laughs, the support, the memories, the growth — I feel grateful more than anything. You didn't just become someone I love; you became my safe place, my happiness, my calm after every chaos. 💕</p>
+                <p><strong>Subhasree</strong>, this isn't just a proposal… it's a promise from <strong>Logeswaran</strong> —<br>To keep loving you gently,<br>To keep laughing with you endlessly,<br>To keep standing beside you always.</p>
+                <p>"In a world full of temporary things, I want our love to be permanent." ❤️</p>
+                <p>So here I am again, with a full heart and endless love…</p>
+                <p class="final-question">Will you keep walking this beautiful journey with me… forever? 💍✨</p>
+            </div>
+            <button class="cute-btn yes-btn" id="acceptBtn" style="margin-top: 25px;">Accept Forever ❤️</button>
+        </div>
+    </div>
+
+    <!-- SCREEN 4: FINAL - CALL YOUR HUSBAND -->
+    <div id="final-screen" class="screen hidden">
+        <div class="pixel-panel final-panel">
+            <div style="font-size: 50px; margin-bottom: 10px;">🌸 💖 🌸 💗 🌸</div>
+            <h2 style="font-family: 'Pixelify Sans'; color: #d90429;">Forever Starts Now 💖</h2>
+            <a href="tel:6381793404" style="text-decoration: none;" id="callLink">
+                <button class="cute-btn yes-btn call-btn">📞 Call Your Husband ❤️</button>
+            </a>
+            <p style="font-family: 'Pixelify Sans'; margin-top: 20px; color: #a14a5e;">— Logeswaran & Subhasree —</p>
+        </div>
+    </div>
+
+    <script>
+        // ===== 🐢 NORMAL SPEED NO BUTTON – LIMIT 5 CLICKS =====
+        (function() {
+            'use strict';
+
+            // ----- CONFIG -----
+            const CORRECT_DATE = "25/06/2025";
+            const NO_LIMIT = 5;              // 🔥 CHANGED FROM 14 TO 5
+            let noClickCount = 0;
+
+            // ----- GENERATE PIXEL HEARTS -----
+            function generatePixelHearts() {
+                const container = document.getElementById('heartContainer');
+                container.innerHTML = '';
+                const hearts = ['❤️', '💖', '💕', '💗', '💓', '💞'];
+                for (let i = 0; i < 35; i++) {
+                    const heart = document.createElement('span');
+                    heart.className = 'pixel-heart';
+                    heart.innerHTML = hearts[Math.floor(Math.random() * hearts.length)];
+                    heart.style.left = Math.random() * 100 + '%';
+                    heart.style.animationDelay = Math.random() * 10 + 's';
+                    heart.style.animationDuration = (Math.random() * 8 + 10) + 's';
+                    heart.style.fontSize = (Math.floor(Math.random() * 20) + 18) + 'px';
+                    container.appendChild(heart);
+                }
+            }
+
+            // ----- SCREEN CONTROLLER -----
+            function showScreen(screenId) {
+                document.querySelectorAll('.screen').forEach(screen => {
+                    screen.classList.add('hidden');
+                });
+                document.getElementById(screenId).classList.remove('hidden');
+            }
+
+            // ----- 🎬 CINEMATIC BOKEH FLOWER EXPLOSION (VIDEO-LIKE) -----
+            function triggerCinematicExplosion() {
+                const canvas = document.getElementById('cinematicCanvas');
+                const ctx = canvas.getContext('2d');
+                
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+                canvas.classList.add('active');
+
+                const particles = [];
+                const flowerSymbols = ['🌸', '🌼', '🌻', '🌺', '🌹', '💐', '✨', '💖', '💗', '🌸'];
+                const particleCount = 180;
+
+                for (let i = 0; i < particleCount; i++) {
+                    particles.push({
+                        x: canvas.width / 2,
+                        y: canvas.height / 2,
+                        vx: (Math.random() - 0.5) * 18,
+                        vy: (Math.random() - 0.8) * 22 - 8,
+                        size: Math.floor(Math.random() * 40) + 20,
+                        symbol: flowerSymbols[Math.floor(Math.random() * flowerSymbols.length)],
+                        blur: Math.random() * 12 + 4,
+                        opacity: Math.random() * 0.7 + 0.3,
+                        rotation: Math.random() * 360,
+                        rotationSpeed: (Math.random() - 0.5) * 2,
+                        life: 1.0,
+                        fade: Math.random() * 0.015 + 0.01
+                    });
+                }
+
+                let animationFrame;
+                const startTime = performance.now();
+
+                function animate() {
+                    ctx.clearRect(0, 0, canvas.width, canvas.height);
+                    ctx.filter = 'blur(2px)';
+                    
+                    let alive = false;
+                    
+                    for (let p of particles) {
+                        p.x += p.vx;
+                        p.y += p.vy;
+                        p.vy += 0.1;
+                        p.vx *= 0.99;
+                        p.vy *= 0.99;
+                        p.rotation += p.rotationSpeed;
+                        p.life -= p.fade;
+                        
+                        if (p.life > 0.02) {
+                            alive = true;
+                            
+                            ctx.save();
+                            ctx.translate(p.x, p.y);
+                            ctx.rotate(p.rotation * Math.PI / 180);
+                            ctx.font = `${p.size}px 'Segoe UI', 'Arial', sans-serif`;
+                            ctx.textAlign = 'center';
+                            ctx.textBaseline = 'middle';
+                            ctx.shadowColor = 'rgba(255, 180, 200, 0.9)';
+                            ctx.shadowBlur = p.blur * 2;
+                            ctx.globalAlpha = p.life * p.opacity;
+                            ctx.filter = `blur(${p.blur}px)`;
+                            ctx.fillStyle = `rgba(255, 220, 240, ${p.life})`;
+                            ctx.fillText(p.symbol, 0, 0);
+                            ctx.restore();
+                        }
+                    }
+                    
+                    if (alive) {
+                        animationFrame = requestAnimationFrame(animate);
+                    } else {
+                        canvas.classList.remove('active');
+                        cancelAnimationFrame(animationFrame);
+                        showScreen('final-screen');
+                    }
+                }
+
+                animate();
+
+                setTimeout(() => {
+                    canvas.classList.remove('active');
+                    cancelAnimationFrame(animationFrame);
+                    showScreen('final-screen');
+                }, 3500);
+            }
+
+            // ----- RESET NO BUTTON -----
+            function resetNoButton() {
+                const noBtn = document.getElementById('noBtn');
+                if (noBtn) {
+                    noBtn.style.position = 'relative';
+                    noBtn.style.left = '0';
+                    noBtn.style.top = '0';
+                    noBtn.style.display = 'inline-block';
+                }
+            }
+
+            // ----- CHECK OVERLAP WITH YES BUTTON -----
+            function isOverlappingYesButton(noBtn, x, y, containerRect) {
+                const yesBtn = document.getElementById('yesBtn');
+                if (!yesBtn) return false;
+                
+                const yesRect = yesBtn.getBoundingClientRect();
+                const noLeft = containerRect.left + x;
+                const noTop = containerRect.top + y;
+                const noRight = noLeft + noBtn.offsetWidth;
+                const noBottom = noTop + noBtn.offsetHeight;
+                
+                return !(noRight < yesRect.left || 
+                        noLeft > yesRect.right || 
+                        noBottom < yesRect.top || 
+                        noTop > yesRect.bottom);
+            }
+
+            // ----- INIT -----
+            document.addEventListener('DOMContentLoaded', function() {
+                generatePixelHearts();
+                showScreen('landing-screen');
+
+                const yesBtn = document.getElementById('yesBtn');
+                const noBtn = document.getElementById('noBtn');
+                const noMessage = document.getElementById('noMessage');
+                const btnContainer = document.getElementById('btnContainer');
+
+                // ----- YES BUTTON -----
+                yesBtn.addEventListener('click', function() {
+                    showScreen('memory-screen');
+                });
+
+                // ----- 🐢 NORMAL SPEED NO BUTTON - LIMIT 5 CLICKS -----
+                if (noBtn) {
+                    // Mouse move detection inside container
+                    btnContainer.addEventListener('mousemove', function(e) {
+                        if (document.getElementById('landing-screen').classList.contains('hidden')) return;
+                        if (noBtn.style.display === 'none') return;
+                        
+                        const containerRect = btnContainer.getBoundingClientRect();
+                        const mouseX = e.clientX - containerRect.left;
+                        const mouseY = e.clientY - containerRect.top;
+                        const btnRect = noBtn.getBoundingClientRect();
+                        const btnX = btnRect.left - containerRect.left;
+                        const btnY = btnRect.top - containerRect.top;
+                        
+                        const dist = Math.hypot(mouseX - (btnX + btnRect.width/2), mouseY - (btnY + btnRect.height/2));
+                        
+                        if (dist < 120) {
+                            const maxX = containerRect.width - btnRect.width - 10;
+                            const maxY = containerRect.height - btnRect.height - 10;
+                            
+                            let attempts = 0;
+                            let newX, newY;
+                            let overlapping;
+                            
+                            do {
+                                newX = Math.floor(Math.random() * maxX);
+                                newY = Math.floor(Math.random() * maxY);
+                                newX = Math.max(5, Math.min(newX, maxX));
+                                newY = Math.max(5, Math.min(newY, maxY));
+                                
+                                overlapping = isOverlappingYesButton(noBtn, newX, newY, containerRect);
+                                attempts++;
+                                if (attempts > 50) break;
+                            } while (overlapping);
+                            
+                            noBtn.style.position = 'absolute';
+                            noBtn.style.left = newX + 'px';
+                            noBtn.style.top = newY + 'px';
+                        }
+                    });
+
+                    // Click counter – now disappears after 5 clicks
+                    noBtn.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        
+                        if (document.getElementById('landing-screen').classList.contains('hidden')) return;
+                        if (this.style.display === 'none') return;
+                        
+                        noClickCount++;
+                        
+                        if (noClickCount >= NO_LIMIT) {  // 🔥 NOW 5 CLICKS
+                            this.style.display = 'none';
+                            noMessage.innerHTML = '🥺 You already said YES before! 💘 Click YES →';
+                        } else {
+                            // 🔥 5 cute messages only
+                            const messages = [
+                                'hehe try again 💕',
+                                'still no? 😘',
+                                'just click YES! 💖',
+                                'I know you want to 💗',
+                                'last chance! 🥰'
+                            ];
+                            noMessage.innerHTML = messages[noClickCount - 1];
+                            
+                            // Also move on click
+                            const containerRect = btnContainer.getBoundingClientRect();
+                            const btnRect = this.getBoundingClientRect();
+                            const maxX = containerRect.width - btnRect.width - 10;
+                            const maxY = containerRect.height - btnRect.height - 10;
+                            
+                            let attempts = 0, newX, newY, overlapping;
+                            do {
+                                newX = Math.floor(Math.random() * maxX);
+                                newY = Math.floor(Math.random() * maxY);
+                                newX = Math.max(5, Math.min(newX, maxX));
+                                newY = Math.max(5, Math.min(newY, maxY));
+                                overlapping = isOverlappingYesButton(noBtn, newX, newY, containerRect);
+                                attempts++;
+                                if (attempts > 50) break;
+                            } while (overlapping);
+                            
+                            this.style.position = 'absolute';
+                            this.style.left = newX + 'px';
+                            this.style.top = newY + 'px';
+                        }
+                    });
+                }
+
+                // ----- 📌 HINT TRIGGER -----
+                const hintTrigger = document.getElementById('hintTrigger');
+                const memoryHint = document.getElementById('memoryHint');
+                
+                hintTrigger.addEventListener('click', function() {
+                    memoryHint.innerHTML = '📖 Do you want any lecture? 😄';
+                    setTimeout(() => {
+                        if (memoryHint.innerHTML === '📖 Do you want any lecture? 😄') {
+                            memoryHint.innerHTML = '';
+                        }
+                    }, 3000);
+                });
+
+                // ----- MEMORY CHECK (PASSWORD HIDDEN) -----
+                document.getElementById('unlockBtn').addEventListener('click', function() {
+                    const input = document.getElementById('dateInput');
+                    const hint = document.getElementById('memoryHint');
+                    
+                    if (input.value.trim() === CORRECT_DATE) {
+                        hint.innerHTML = '✅ My heart is yours... 💖';
+                        setTimeout(() => {
+                            showScreen('proposal-screen');
+                            input.value = '';
+                            hint.innerHTML = '';
+                        }, 600);
+                    } else {
+                        hint.innerHTML = '❌ Not our day... try again 💕';
+                        input.classList.add('shake');
+                        setTimeout(() => input.classList.remove('shake'), 400);
+                    }
+                });
+
+                document.getElementById('dateInput').addEventListener('keypress', function(e) {
+                    if (e.key === 'Enter') {
+                        document.getElementById('unlockBtn').click();
+                    }
+                });
+
+                // ----- 🎬 ACCEPT BUTTON -----
+                document.getElementById('acceptBtn').addEventListener('click', function() {
+                    triggerCinematicExplosion();
+                });
+
+                // ----- RESET ON RESIZE -----
+                window.addEventListener('resize', function() {
+                    if (!document.getElementById('landing-screen').classList.contains('hidden')) {
+                        resetNoButton();
+                    }
+                    const canvas = document.getElementById('cinematicCanvas');
+                    canvas.width = window.innerWidth;
+                    canvas.height = window.innerHeight;
+                });
+            });
+        })();
+    </script>
+</body>
+</html>

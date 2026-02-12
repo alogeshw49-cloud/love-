@@ -1,0 +1,302 @@
+/* === CINEMATIC PIXEL ROMANTIC THEME - 100% ERROR FREE === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Pixelify Sans', sans-serif;
+    background: linear-gradient(145deg, #ffdde2 0%, #ffe4e9 40%, #fff0f3 100%);
+    min-height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* ----- floating hearts cinematic background (JS will fill) ----- */
+.floating-hearts {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.heart {
+    position: absolute;
+    font-size: 24px;
+    opacity: 0.7;
+    animation: floatUp linear infinite;
+    filter: drop-shadow(0 0 6px rgba(255, 105, 135, 0.5));
+    color: #ff99aa;
+    user-select: none;
+    pointer-events: none;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 0.9;
+    }
+    100% {
+        transform: translateY(-100vh) scale(0.8);
+        opacity: 0.1;
+    }
+}
+
+/* ----- screen layout & panels ----- */
+.screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+    transition: opacity 0.5s ease, transform 0.4s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+
+.screen.hidden {
+    display: none !important;
+}
+
+/* ----- pixel romantic panel (cute card) ----- */
+.pixel-panel {
+    background: rgba(255, 245, 245, 0.95);
+    padding: 30px 28px;
+    border: 4px solid #ff4d6d;
+    border-radius: 20px;
+    box-shadow: 12px 12px 0 #b3002d, 0 15px 35px rgba(210, 30, 70, 0.15);
+    text-align: center;
+    max-width: 560px;
+    width: 100%;
+    backdrop-filter: blur(2px);
+    transition: all 0.3s;
+    animation: fadeGlow 3s infinite alternate;
+}
+
+@keyframes fadeGlow {
+    0% {
+        box-shadow: 12px 12px 0 #b3002d, 0 0 25px #ffb6c1;
+    }
+    100% {
+        box-shadow: 12px 12px 0 #b3002d, 0 0 45px #ff9eb5;
+    }
+}
+
+.pixel-panel h2 {
+    color: #c9184a;
+    font-size: 28px;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 0 #ffe3e3;
+}
+
+.pixel-panel p {
+    color: #2f1b25;
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 18px;
+}
+
+/* ----- buttons with pixel bounce ----- */
+button {
+    font-family: 'Pixelify Sans', sans-serif;
+    padding: 12px 28px;
+    margin: 8px;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.22s cubic-bezier(0.34, 1.56, 0.64, 1);
+    box-shadow: 5px 5px 0 #9f1e35;
+    letter-spacing: 1.2px;
+}
+
+.yes-btn {
+    background: #ff4d6d;
+    color: white;
+    box-shadow: 6px 6px 0 #a4133c;
+    border: 2px solid #fff0f0;
+}
+
+.no-btn {
+    background: #ffe6ea;
+    color: #3a1e1e;
+    box-shadow: 6px 6px 0 #ff8fa3;
+    border: 2px solid #ffb3c1;
+    position: relative;
+}
+
+button:hover {
+    transform: translateY(-4px) scale(1.07);
+    box-shadow: 8px 8px 0 #7f1e2e;
+}
+
+/* ----- special NO button runaway style ----- */
+#noBtn {
+    transition: left 0.12s ease, top 0.12s ease;
+}
+
+/* ----- input field memory ----- */
+input {
+    font-family: 'Pixelify Sans', sans-serif;
+    padding: 15px 16px;
+    width: 85%;
+    border: 3px solid #ffb3c6;
+    border-radius: 16px;
+    font-size: 18px;
+    text-align: center;
+    background: #fff9fb;
+    box-shadow: inset 3px 3px 0 #ffe3e3, 4px 4px 0 #ff4d6d;
+    margin: 12px 0;
+    outline: none;
+    color: #590d22;
+}
+
+input:focus {
+    border-color: #ff4d6d;
+    box-shadow: inset 2px 2px 0 #ffc0cb, 6px 6px 0 #b3002d;
+}
+
+/* ----- memory hint & cute message ----- */
+.hint-message {
+    color: #c9184a;
+    font-size: 16px;
+    min-height: 30px;
+    margin-top: 5px;
+}
+
+.cute-hidden-message {
+    color: #b34167;
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 18px;
+    background: #ffe8ed;
+    padding: 10px;
+    border-radius: 30px;
+    border: 2px dashed #ff4d6d;
+}
+
+/* ----- proposal letter panel ----- */
+.letter-panel {
+    background: #fff8fa;
+    max-width: 680px;
+    max-height: 80vh;
+    overflow-y: auto;
+    padding: 35px 30px;
+    border: 4px solid #ff6b7c;
+    border-radius: 20px;
+    scrollbar-width: thin;
+    scrollbar-color: #ff8da1 #ffe6e9;
+}
+
+.proposal-text {
+    text-align: left;
+    color: #331c1c;
+    font-size: 16.5px;
+}
+
+.proposal-text p {
+    margin-bottom: 18px;
+    line-height: 1.65;
+}
+
+.final-question {
+    font-size: 22px;
+    color: #b8003a;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* ----- final screen call button and explosion effect----- */
+.final-panel {
+    background: #ffeef0;
+    border: 4px solid #ff4d6d;
+    border-radius: 20px;
+}
+
+.call-link {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.call-btn {
+    background: #ff3b5c;
+    font-size: 24px;
+    padding: 16px 30px;
+    margin: 18px 0;
+    box-shadow: 8px 8px 0 #87001e;
+    border: 2px solid white;
+}
+
+.tiny-forever {
+    font-size: 15px;
+    color: #a14a5e;
+    margin-top: 18px;
+}
+
+/* ----- heart explosion animation (final) ----- */
+.heart-explosion {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    font-size: 44px;
+    margin: 15px 0 5px;
+    animation: pop 0.8s infinite alternate ease-in-out;
+}
+
+@keyframes pop {
+    0% {
+        transform: scale(0.9);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1.3);
+        opacity: 1;
+        text-shadow: 0 0 18px hotpink;
+    }
+}
+
+/* ----- extra pixel cat optional ----- */
+.cat-pixel {
+    font-size: 40px;
+    filter: drop-shadow(2px 4px 0 #ff4d6d);
+}
+
+/* ---- responsive mobile ----- */
+@media (max-width: 480px) {
+    .pixel-panel {
+        padding: 22px 16px;
+    }
+    
+    button {
+        padding: 12px 18px;
+        font-size: 16px;
+        margin: 6px;
+    }
+    
+    .pixel-panel h2 {
+        font-size: 24px;
+    }
+    
+    .call-btn {
+        font-size: 20px;
+        padding: 14px 24px;
+    }
+    
+    .heart-explosion {
+        font-size: 36px;
+        gap: 12px;
+    }
+    
+    input {
+        width: 95%;
+        font-size: 16px;
+    }
+}
